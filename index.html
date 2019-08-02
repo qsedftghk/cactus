@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="twentytwenty.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="header.css" type="text/css" media="screen" />
 </head>
-<body>
+<body onload="go()">
 <header>
 <p>Кактусино <a href="https://3ddd.ru/blog/post/modeling_cactus_in_simplest_way" class="stuts">По мотивам урока на 3DDD.ru</a> <a href="https://qsedftghk.github.io/cactus/360" class="stuts"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(покрутить кактус на 360&#176;)</a></p>
 </header>
@@ -19,7 +19,8 @@
 </div>
 
 <script>
-$(document).ready(function() {
+<!-- $(document).ready(function()  -->
+function go(){
   $("#container1").twentytwenty({
     default_offset_pct: 0.5, // сколько показывать 'изображение до' в процентах (максимально 1) сразу после загрузки страницы
     orientation: 'horizontal', // ориентация слайдера ('horizontal' или 'vertical')
@@ -30,7 +31,8 @@ $(document).ready(function() {
     move_with_handle_only: true, // двигать слайдер только за его "бегунок"
     click_to_move: true // разрешить перемещение "бегунка" слайдера по клику на изображении
   });
-});
+}
+<!-- }); -->
 </script>
 
 </body>
